@@ -9,26 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var app_component_1 = require('./app.component');
-var page1_component_1 = require('./components/page1component/page1.component');
-var page2_component_1 = require('./components/page2component/page2.component');
-var AppModule = (function () {
-    function AppModule() {
+var Page1Component = (function () {
+    function Page1Component() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [
-                app_component_1.AppComponent,
-                page1_component_1.Page1Component,
-                page2_component_1.Page2Component
-            ],
-            bootstrap: [app_component_1.AppComponent]
+    Page1Component = __decorate([
+        core_1.Component({
+            selector: 'kits-page1',
+            templateUrl: './app/components/page1component/page1.component.html',
+            styleUrls: ['./app/components/page1component/page1.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], Page1Component);
+    return Page1Component;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.Page1Component = Page1Component;
+//# sourceMappingURL=page1.component.js.map
