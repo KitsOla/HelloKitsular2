@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from './app/user';
+import { User } from './user';
 
 const USERS : User[] = [
    	{
