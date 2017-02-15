@@ -9,7 +9,7 @@ const USERS : User[] = [
    	},
    	{
    		id: 2,
-   		firstname: 'Kalle',
+   		firstname: 'Karl',
    		lastname: 'Bengtsson'
    	},
    	{
