@@ -17,7 +17,7 @@ var USERS = [
     },
     {
         id: 2,
-        firstname: 'Kalle',
+        firstname: 'Karl',
         lastname: 'Bengtsson'
     },
     {

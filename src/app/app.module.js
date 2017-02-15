@@ -13,6 +13,7 @@ var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var page1_component_1 = require('./components/page1component/page1.component');
 var page2_component_1 = require('./components/page2component/page2.component');
+var page3_component_1 = require('./components/page3component/page3.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -22,7 +23,8 @@ var AppModule = (function () {
             declarations: [
                 app_component_1.AppComponent,
                 page1_component_1.Page1Component,
-                page2_component_1.Page2Component
+                page2_component_1.Page2Component,
+                page3_component_1.Page3Component
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 
