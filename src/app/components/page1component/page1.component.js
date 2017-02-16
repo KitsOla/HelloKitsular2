@@ -9,16 +9,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var Page1Component = (function () {
-    function Page1Component() {
+    function Page1Component(router) {
+        this.router = router;
     }
+    Page1Component.prototype.update = function (value) {
+        if (value) {
+            this.id = value;
+        }
+    };
+    Page1Component.prototype.ngOnInit = function () {
+        this.id = "No value entered";
+    };
+    Page1Component.prototype.gotoPage3 = function () {
+        this.router.navigate(['/page3', this.id]);
+    };
     Page1Component = __decorate([
         core_1.Component({
             selector: 'kits-page1',
             templateUrl: './app/components/page1component/page1.component.html',
             styleUrls: ['./app/components/page1component/page1.component.css']
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], Page1Component);
     return Page1Component;
 }());
