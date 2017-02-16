@@ -9,9 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var common_1 = require('@angular/common');
 var Page3Component = (function () {
-    function Page3Component() {
+    function Page3Component(location, route) {
+        this.location = location;
+        this.route = route;
     }
+    Page3Component.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.subscribe(function (params) {
+            if (params.id) {
+                _this.id = params.id;
+            }
+            else {
+                _this.id = "Parameter not sent.";
+            }
+        });
+    };
     Page3Component = __decorate([
         core_1.Component({
             selector: 'kits-page3',
@@ -21,7 +36,7 @@ var Page3Component = (function () {
                 './app/components/page3component/page3.component.css'
             ]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [common_1.Location, router_1.ActivatedRoute])
     ], Page3Component);
     return Page3Component;
 }());

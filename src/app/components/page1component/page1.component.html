@@ -1,4 +1,9 @@
 <div id="page1">
 	<h1>Page one</h1>
 	<span>This is page one</span>
+	<input #box  (blur)="update(box.value)">
+    <p>Send this value to page3:</p>
+    <p>{{id}}</p>
+
+	<button (click)="gotoPage3()">View Page3</button>
 </div>
