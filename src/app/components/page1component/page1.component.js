@@ -9,19 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.name = 'Kits';
+var Page1Component = (function () {
+    function Page1Component() {
     }
-    AppComponent = __decorate([
+    Page1Component = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "<h1>Hello {{name}}</h1>\n  \t\t\t<kits-page1></kits-page1>\n  \t\t\t<kits-page2></kits-page2>\n  \t\t\t<kits-page3></kits-page3>",
-            styleUrls: ['./app/css/app.component.css'],
+            selector: 'kits-page1',
+            templateUrl: './app/components/page1component/page1.component.html',
+            styleUrls: ['./app/components/page1component/page1.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], Page1Component);
+    return Page1Component;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.Page1Component = Page1Component;
+//# sourceMappingURL=page1.component.js.map

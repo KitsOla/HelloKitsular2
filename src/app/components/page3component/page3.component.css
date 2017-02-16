@@ -1,0 +1,19 @@
+
+
+#page3{
+	width: 100%;
+	background-color: #C1AE48;
+	color: white;
+	font-size: 16px;
+	height: 400px;
+}
+
+h1{
+	font-size: 24px;
+	font-weight: bold;
+	padding:  5px 20px;
+}
+
+span{
+	padding: 5px 20px;
+}
