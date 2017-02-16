@@ -8,18 +8,5 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class Page1Component {
- 
-  //constructor(
-   // private router: Router,
-   // private heroService: HeroService) { }
 
-
-  // ngOnInit(): void {
-  //   this.getHeroes();
-  // }
-
-
-  // gotoDetail(): void {
-  //   this.router.navigate(['/detail', this.selectedHero.id]);
-  // }
 }
