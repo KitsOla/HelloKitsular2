@@ -6,15 +6,20 @@ import { Page1Component } from './components/page1component/page1.component';
 import { Page2Component } from './components/page2component/page2.component';
 import { Page3Component } from './components/page3component/page3.component';
 
+import { AppRoutingModule }     from './app-routing.module';
+
 @NgModule({
-  imports:      [ BrowserModule ],
-  declarations: 
-  	[ 
-  		AppComponent,
-  		Page1Component,
-  		Page2Component,
-  		Page3Component
-   	],
-  bootstrap:    [ AppComponent ]
+	  imports: [ 
+	  			BrowserModule,
+	  			AppRoutingModule 
+	  ],
+	  declarations: 
+	  	[ 
+	  		AppComponent,
+	  		Page1Component,
+	  		Page2Component,
+	  		Page3Component
+	   	],
+	  bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

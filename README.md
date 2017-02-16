@@ -13,13 +13,11 @@ First off we are going to create some pages as components and after this we are 
 
 2.	Download or clone this repo.
 
-3.	Delete the contents in node-modules. (this will get installed later with npm)
+3.	In terminal, navigate to your newly created clone
 
-4.	In terminal, navigate to your newly created clone
+4. 	Write npm install
 
-5. 	Write npm install
+5.	Write npm start
 
-6.	Write npm start
-
-7.	A browser will open and a very basic example-page will be visible
+6.	A browser will open and a very basic example-page will be visible
 

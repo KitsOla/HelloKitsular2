@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -7,19 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: [ './app/components/page1component/page1.component.css' ]
 })
 
-export class Page1Component {
- 
-  //constructor(
-   // private router: Router,
-   // private heroService: HeroService) { }
+export class Page1Component implements OnInit{
+    id: string;
+    constructor(private router:Router) { 
+ }
 
+  update(value: string) {
+    if(value){ 
+      this.id = value; 
+    }
+  }
 
-  // ngOnInit(): void {
-  //   this.getHeroes();
-  // }
+ ngOnInit(): void{
+   this.id = "No value entered";
+ }
 
-
-  // gotoDetail(): void {
-  //   this.router.navigate(['/detail', this.selectedHero.id]);
-  // }
+  gotoPage3(): void {
+    this.router.navigate(['/page3', this.id]);
+  }
 }
