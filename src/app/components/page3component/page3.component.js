@@ -12,18 +12,18 @@ var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var common_1 = require('@angular/common');
 var Page3Component = (function () {
-    function Page3Component(location, route) {
+    function Page3Component(location, activatedRoute) {
         this.location = location;
-        this.route = route;
+        this.activatedRoute = activatedRoute;
     }
     Page3Component.prototype.ngOnInit = function () {
         var _this = this;
-        this.route.params.subscribe(function (params) {
-            if (params.id) {
-                _this.id = params.id;
+        this.activatedRoute.params.subscribe(function (params) {
+            if (params['id']) {
+                _this.id = params['id'];
             }
             else {
-                _this.id = "Parameter not sent.";
+                _this.id = 'No parameters';
             }
         });
     };
