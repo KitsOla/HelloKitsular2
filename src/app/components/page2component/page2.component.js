@@ -12,18 +12,33 @@ var core_1 = require('@angular/core');
 var USERS = [
     {
         id: 1,
-        firstname: 'Jens',
-        lastname: 'Olsson'
+        firstname: 'Millie Bobby',
+        lastname: 'Brown'
     },
     {
         id: 2,
-        firstname: 'Karl',
-        lastname: 'Bengtsson'
+        firstname: 'Gaten',
+        lastname: 'Matarazzo'
     },
     {
         id: 3,
-        firstname: 'Harald',
-        lastname: 'Rolandsson'
+        firstname: 'Winona',
+        lastname: 'Ryder'
+    },
+    {
+        id: 4,
+        firstname: 'Finn',
+        lastname: 'Wolfhard'
+    },
+    {
+        id: 5,
+        firstname: 'Natalia',
+        lastname: 'Dyer'
+    },
+    {
+        id: 6,
+        firstname: 'Charlie',
+        lastname: 'Heaton'
     }
 ];
 var Page2Component = (function () {
@@ -40,7 +55,8 @@ var Page2Component = (function () {
         core_1.Component({
             selector: 'kits-page2',
             templateUrl: './app/components/page2component/page2.component.html',
-            styleUrls: ['./app/components/page2component/page2.component.css']
+            styleUrls: ['./app/css/app.component.css',
+                './app/components/page2component/page2.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], Page2Component);

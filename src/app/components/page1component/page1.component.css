@@ -1,9 +1,16 @@
+
 #page1{
-	width: 100%;
-	background-color: #F37F4A;
-	color: white;
+	color: #F37F4A;
 	font-size: 16px;
-	height: 400px;
+}
+
+input[type=text]{
+	height: 24px;
+    border-radius: 3px;
+    border: solid 1px gray;
+    margin: 5px 0px;
+    border-radius: 4px;
+    padding: 0px 20px;
 }
 
 h1{
@@ -12,6 +19,4 @@ h1{
 	padding:  5px 20px;
 }
 
-span{
-	padding: 5px 20px;
-}
+span{ color: #F37F4A; }

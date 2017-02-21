@@ -1,23 +1,25 @@
+
+#page-wrap{
+	color: #F37F4A;
+}
+
 #page2{
-	width: 100%;
-	background-color: #C9C6A6;
-	color: white;
+	color: #F37F4A;
 	font-size: 16px;
-	height: 400px;
 }
 
 h1{
 	font-size: 24px;
 	font-weight: bold;
 	padding:  5px 20px;
+	color:#F37F4A;
 }
-
 span{
-	padding: 5px 20px;
+	margin: 5px 20px;
 }
 
 ul{
 	list-style: none;
     margin-left: 0px;
-    padding-left: 10px;
+    padding-left: 0px;
 }

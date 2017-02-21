@@ -11,12 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
-        this.name = 'Hello Kits';
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n  <h1>{{name}}</h1>\n    <nav>\n      <a routerLink=\"/page1\" routerLinkActive=\"active\">First page</a>\n      <a routerLink=\"/page2\" routerLinkActive=\"active\">Second Page</a>\n    </nav>\n    <router-outlet></router-outlet>",
+            template: "\n    <nav>\n      <a class=\"navlink\" routerLink=\"/page1\" routerLinkActive=\"active\">First page</a>\n      <a class=\"navlink\" routerLink=\"/page2\" routerLinkActive=\"active\">Second Page</a>\n    </nav>\n    <router-outlet></router-outlet>",
             styleUrls: ['./app/css/app.component.css'],
         }), 
         __metadata('design:paramtypes', [])
