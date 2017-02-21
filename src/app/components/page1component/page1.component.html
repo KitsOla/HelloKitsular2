@@ -1,9 +1,10 @@
 <div id="page1">
-	<h1>Page one</h1>
-	<span>This is page one</span>
-	<input #box  (blur)="update(box.value)">
-    <p>Send this value to page3:</p>
-    <p>{{id}}</p>
-
-	<button (click)="gotoPage3()">View Page3</button>
+	<img class="bg" src="/app/assets/images/car.png" alt="car" />
+	<div id="page-wrap">
+		<span>Ange titlen på tv-serien som bakgrundsbilderna kommer ifrån.</span>
+		<br>
+		<input type="text" #box (blur)="update(box.value)">
+		<br><br>
+	    <button (click)="gotoPage3()">{{id}}</button>
+	</div>	
 </div>

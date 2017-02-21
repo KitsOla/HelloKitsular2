@@ -1,9 +1,11 @@
 <div id="page2">
-	<h1>Page two</h1>
-	<span>This is page two</span>
-	<ul class="names">
-		<li *ngFor="let user of users">
-	    	<span class="user"> {{user.firstname}} {{user.lastname}} </span>
-		</li>
-	</ul>
+	<img class="bg" src="/app/assets/images/corridor.png" alt="corridor" />
+	<div id="page-wrap">
+		<h1>Cast</h1>
+		<ul class="names">
+			<li *ngFor="let user of users">
+		    	<span class="user"> {{user.firstname}} {{user.lastname}} </span>
+			</li>
+		</ul>
+	</div>
 </div>

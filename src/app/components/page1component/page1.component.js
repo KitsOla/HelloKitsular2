@@ -29,7 +29,8 @@ var Page1Component = (function () {
         core_1.Component({
             selector: 'kits-page1',
             templateUrl: './app/components/page1component/page1.component.html',
-            styleUrls: ['./app/components/page1component/page1.component.css']
+            styleUrls: ['./app/css/app.component.css',
+                './app/components/page1component/page1.component.css']
         }), 
         __metadata('design:paramtypes', [router_1.Router])
     ], Page1Component);
